@@ -1,0 +1,335 @@
+body{
+  background-color: #272727;
+  color: #ffffff;
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+nav{
+  background-color: #333333b8;
+  display: flex;
+  height: 100px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.Links{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 70%;
+  padding-left: 5px;
+}
+
+.log{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 70%;
+  padding-right: 10px;
+}
+
+.logo {
+  font-family: 'Arial', sans-serif;
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+  padding: 10px;
+  background-color: #ff5400;
+  color: #ffffff;
+  border-radius: 5px;
+  text-decoration: none;
+  display: inline-block;
+  position: absolute;
+  top: 20px;
+  /* Centrer */
+  left: 50%;
+  transform: translate(-50%, 0)
+}
+
+.logo:hover {
+  background-color: #a25630;
+}
+
+.logo a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.logo a:hover {
+  text-decoration: none;
+}
+
+.logContainer{
+  background-color: #ff5400;
+  border-radius: 10px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+  width: 400px;
+  height: 400px;
+}
+
+
+
+.logContainer > form{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 70%;
+}
+
+.logContainer > form > div{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.txtCom{
+  margin-bottom: 10px;
+  font-size: bold;
+}
+
+.jeuContainer{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.jeu{
+  border-radius: 20px;
+  background-color: rgba(255, 255, 255, 0.163);
+  color: black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  height: 440px;
+  width: 300px;
+  margin: 20px;
+  overflow: hidden;
+  overflow-y: scroll;
+  z-index: 1;
+}
+
+.jeu > h1, h2{
+  margin: 0;
+  padding: 0;
+}
+
+.jeubutton{
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+}
+
+.imgContainer {
+  width: 300px;
+  height: 300px;
+}
+
+.imgContainer img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.rechercherBar{
+  height: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.spaceJeu{
+  height: 40px;
+}
+
+.panierContainer{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.viderButton {
+  background-color: #e74c3c;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.viderButton:hover {
+  background-color: #c0392b;
+}
+
+.viderPanierdiv{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 70px;
+}
+
+
+.rechercherBar > form {
+  display: flex;
+  justify-content: center;
+}
+
+.rechercherBar > form >input[type="text"] {
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 300px;
+}
+
+.commentaireNote{
+  width: 100%;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  color: #000000;
+
+}
+
+.commentaireNote > h4, h3, ul{
+  margin: 0;
+  margin-bottom: 10px;
+  padding: 0;
+}
+
+.comms{
+  display: flex;
+}
+
+.comms > p{
+  margin: 0;
+  margin-right: 5px;
+  padding: 0;
+}
+
+.jeubutton > button {
+  background-color: #ff5400;
+  color: rgb(255, 255, 255);
+  border: none;
+  border-radius: 5px;
+  padding: 10px 15px;
+  margin: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.jeubutton > button:hover {
+  background-color: #d45e23;
+}
+
+.jeu > button {
+  background-color: #ff5400;
+  color: rgb(255, 255, 255);
+  border: none;
+  border-radius: 5px;
+  padding: 10px 15px;
+  margin: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.jeu > button:hover {
+  background-color: #d45e23;
+}
+
+.button {
+  background-color: #0e0804;
+  color: rgb(255, 255, 255);
+  border: none;
+  border-radius: 5px;
+  padding: 10px 15px;
+  margin: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.button:hover{
+  background-color: #272727;
+}
+
+
+.topLeft{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 100%;
+  margin-left: 20px;
+}
+
+.topLeft a {
+  margin-right: 20px;
+  text-decoration: none;
+  color: #ff5400;
+  font-weight:bold;
+  font-size: 24px;
+  transition: color 0.3s ease;
+}
+
+.topLeft a:hover {
+  color: #de6529;
+}
+
+.log a {
+  margin-right: 20px;
+  text-decoration: none;
+  color: #ff5400;
+  font-weight:bold;
+  font-size: 24px;
+  transition: color 0.3s ease;
+}
+
+.log a:hover {
+  color: #de6529;
+}
+
+.panierLogout > button {
+  background-color: #ff5400;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 15px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-right: 20px;
+}
+
+.panierLogout > button:hover {
+  background-color: #ff5400;
+}
+
+.submit{
+  display : flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  height: 100px;
+}
+
+.submitPanierButton{
+    background-color: #ff5400;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.submitPanierButton:hover {
+  background-color: #d8642b;
+}
